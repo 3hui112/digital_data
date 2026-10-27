@@ -1,0 +1,49 @@
+{
+  "dataset": "har",
+  "data_root": "/home/ksh020954/mamba_dd/data",
+  "download": false,
+  "model": "mamba",
+  "lti": false,
+  "out": "runs/B_mamba_s0",
+  "seeds": [
+    0
+  ],
+  "epochs": 20,
+  "batch_size": 64,
+  "d_model": 32,
+  "d_state": 16,
+  "n_layers": 2,
+  "d_conv": 4,
+  "split_seed": 42,
+  "subset_seed": 123,
+  "permutation_seed": 42,
+  "missing_seed": 456,
+  "image_size": 14,
+  "threads": 1,
+  "train_subset": null,
+  "val_subjects": null,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "val_fraction": 0.2,
+  "dt_min": 0.001,
+  "dt_max": 0.1,
+  "delta_scale": 1.0,
+  "keep_rate": 1.0,
+  "downsample_factor": 1,
+  "downsample_method": "aa",
+  "gap_mode": "ignore",
+  "image_filter": "blur",
+  "image_mode": "pixel",
+  "scan": "raster",
+  "device": "cuda",
+  "bandstop_train_val": [
+    0.3,
+    3.0
+  ],
+  "bandstop_filter": "butter N=4 bandstop, sosfiltfilt, fs=50",
+  "normalizer": "fit on unfiltered training subset",
+  "versions": {
+    "python": "3.11.17",
+    "torch": "2.6.0+cu124"
+  }
+}

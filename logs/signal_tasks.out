@@ -1,0 +1,55 @@
+{
+ "1.2": {
+  "25.0Hz": {
+   "rel_l1_naive_vs_aa": 0.01344010978937149,
+   "frac_orig_power_above_new_nyquist": 0.010893776081502438
+  },
+  "12.5Hz": {
+   "rel_l1_naive_vs_aa": 0.19019421935081482,
+   "frac_orig_power_above_new_nyquist": 0.15701225399971008
+  },
+  "6.25Hz": {
+   "rel_l1_naive_vs_aa": 0.5285396575927734,
+   "frac_orig_power_above_new_nyquist": 0.37126272916793823
+  }
+ },
+ "1.2b": {
+  "25.0Hz": {
+   "predicted_alias_hz": 7.0,
+   "naive_peak_near_pred_hz": 7.03125,
+   "naive_psd_at_alias": 0.13781484847445633,
+   "aa_peak_near_pred_hz": 6.25,
+   "aa_psd_at_alias": 0.0011110439822022802,
+   "up_naive_18hz_ratio": 5.447120434976724e-07,
+   "up_naive_alias_ratio": 123.94117198403501,
+   "up_aa_18hz_ratio": 3.759299490700297e-09,
+   "up_aa_alias_ratio": 0.9993651326559395,
+   "pure_tone_peak_hz": 7.0
+  },
+  "12.5Hz": {
+   "predicted_alias_hz": 5.5,
+   "naive_peak_near_pred_hz": 5.46875,
+   "naive_psd_at_alias": 0.13998382657559186,
+   "aa_peak_near_pred_hz": 5.078125,
+   "aa_psd_at_alias": 0.001758592692927378,
+   "up_naive_18hz_ratio": 6.734507269714364e-09,
+   "up_naive_alias_ratio": 67.8371721705294,
+   "up_aa_18hz_ratio": 1.0692308809838888e-10,
+   "up_aa_alias_ratio": 0.8601896047736214,
+   "pure_tone_peak_hz": 5.5
+  },
+  "6.25Hz": {
+   "predicted_alias_hz": 0.75,
+   "naive_peak_near_pred_hz": 0.78125,
+   "naive_psd_at_alias": 0.1410032054880543,
+   "aa_peak_near_pred_hz": 1.5625,
+   "aa_psd_at_alias": 0.0009097167261387344,
+   "up_naive_18hz_ratio": 5.0421080944445267e-11,
+   "up_naive_alias_ratio": 155.4275540393171,
+   "up_aa_18hz_ratio": 1.7247469769366392e-11,
+   "up_aa_alias_ratio": 1.0030400150499492,
+   "pure_tone_peak_hz": 0.75
+  }
+ }
+}
+1.3 raw-only control {'acc': 0.7744897959183673, 'macro_f1': 0.757925418980473}

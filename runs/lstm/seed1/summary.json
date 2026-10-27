@@ -1,0 +1,74 @@
+{
+  "split": "validation",
+  "std_convention": "sample std, ddof=1; null for one seed",
+  "runs": [
+    {
+      "seed": 1,
+      "parameters": 14150,
+      "epoch": 14,
+      "accuracy": 0.9091836734693878,
+      "macro_f1": 0.9143890215454249,
+      "confusion_matrix": [
+        [
+          294,
+          0,
+          0,
+          2,
+          15,
+          0
+        ],
+        [
+          16,
+          264,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          242,
+          17,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          257,
+          97,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          28,
+          345,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          380
+        ]
+      ],
+      "valid_length_min": 128,
+      "valid_length_max": 128,
+      "valid_length_mean": 128.0
+    }
+  ],
+  "accuracy": {
+    "mean": 0.9091836734693878,
+    "std": null
+  },
+  "macro_f1": {
+    "mean": 0.9143890215454249,
+    "std": null
+  }
+}

@@ -1,0 +1,198 @@
+{
+ "shape_trace": [
+  [
+   "in_proj: expand to 2\u00b7E\u00b7D",
+   [
+    1,
+    128,
+    128
+   ]
+  ],
+  [
+   "chunk \u2192 main u / gate z",
+   [
+    1,
+    128,
+    64
+   ]
+  ],
+  [
+   "depthwise causal conv1d k=4 (+crop)",
+   [
+    1,
+    128,
+    64
+   ]
+  ],
+  [
+   "SiLU",
+   [
+    1,
+    128,
+    64
+   ]
+  ],
+  [
+   "x_proj \u2192 [\u0394_raw | B | C]",
+   [
+    1,
+    128,
+    34
+   ]
+  ],
+  [
+   "  \u0394_raw (low rank r)",
+   [
+    1,
+    128,
+    2
+   ]
+  ],
+  [
+   "  B_t",
+   [
+    1,
+    128,
+    16
+   ]
+  ],
+  [
+   "  C_t",
+   [
+    1,
+    128,
+    16
+   ]
+  ],
+  [
+   "dt_proj + softplus \u2192 \u0394_t",
+   [
+    1,
+    128,
+    64
+   ]
+  ],
+  [
+   "A = -exp(A_log)",
+   [
+    64,
+    16
+   ]
+  ],
+  [
+   "state h_t",
+   [
+    1,
+    64,
+    16
+   ]
+  ],
+  [
+   "ssm: y_t = \u03a3_n C_t h_t + D u_t",
+   [
+    1,
+    128,
+    64
+   ]
+  ],
+  [
+   "gate \u2299 SiLU(z)",
+   [
+    1,
+    128,
+    64
+   ]
+  ],
+  [
+   "out_proj \u2192 D",
+   [
+    1,
+    128,
+    32
+   ]
+  ]
+ ],
+ "lti_equivalence": {
+  "direct": 5.269562564080843e-08,
+  "fft_padded": 1.7455822387546505e-07,
+  "fft_circular_no_pad": 0.004237331449985504
+ },
+ "lti_kernel_energy_beyond_128": {
+  "22": 4.070322204285937e-12,
+  "33": 0.00011184695176780224,
+  "12": 0.0025955666787922382,
+  "29": 0.09117412567138672
+ },
+ "delta_lti_s0": {
+  "layer1": {
+   "delta_median": 0.012669569812715054,
+   "delta_p05": 0.001771537703461945,
+   "delta_p95": 0.06347223371267319,
+   "half_life_median": 8.176183700561523,
+   "frac_half_life_gt_128": 0.0361328125,
+   "frac_half_life_lt_1": 0.03515625,
+   "delta_time_cv": 0.0,
+   "delta_mean_by_class": {
+    "WALKING": 0.019744908437132835,
+    "WALKING_UPSTAIRS": 0.019744910299777985,
+    "WALKING_DOWNSTAIRS": 0.019744910299777985,
+    "SITTING": 0.019744910299777985,
+    "STANDING": 0.019744912162423134,
+    "LAYING": 0.019744908437132835
+   }
+  },
+  "layer2": {
+   "delta_median": 0.013842529617249966,
+   "delta_p05": 0.001789091038517654,
+   "delta_p95": 0.07759741693735123,
+   "half_life_median": 8.279620170593262,
+   "frac_half_life_gt_128": 0.0361328125,
+   "frac_half_life_lt_1": 0.078125,
+   "delta_time_cv": 0.0,
+   "delta_mean_by_class": {
+    "WALKING": 0.02654866687953472,
+    "WALKING_UPSTAIRS": 0.02654867060482502,
+    "WALKING_DOWNSTAIRS": 0.02654866874217987,
+    "SITTING": 0.02654866874217987,
+    "STANDING": 0.02654866874217987,
+    "LAYING": 0.02654866874217987
+   }
+  }
+ },
+ "delta_mamba_s0": {
+  "layer1": {
+   "delta_median": 0.012806389480829239,
+   "delta_p05": 0.0013281500432640314,
+   "delta_p95": 0.09445338696241379,
+   "half_life_median": 6.862256050109863,
+   "frac_half_life_gt_128": 0.0234375,
+   "frac_half_life_lt_1": 0.0703125,
+   "delta_time_cv": 0.2673139274120331,
+   "delta_mean_by_class": {
+    "WALKING": 0.025329969823360443,
+    "WALKING_UPSTAIRS": 0.02568804658949375,
+    "WALKING_DOWNSTAIRS": 0.027436785399913788,
+    "SITTING": 0.023096265271306038,
+    "STANDING": 0.027054958045482635,
+    "LAYING": 0.025641078129410744
+   }
+  },
+  "layer2": {
+   "delta_median": 0.013608576729893684,
+   "delta_p05": 0.0012979437597095966,
+   "delta_p95": 0.11778748035430908,
+   "half_life_median": 7.121093273162842,
+   "frac_half_life_gt_128": 0.0341796875,
+   "frac_half_life_lt_1": 0.11328125,
+   "delta_time_cv": 0.1923951357603073,
+   "delta_mean_by_class": {
+    "WALKING": 0.03384982421994209,
+    "WALKING_UPSTAIRS": 0.03739231824874878,
+    "WALKING_DOWNSTAIRS": 0.03983115032315254,
+    "SITTING": 0.02649577707052231,
+    "STANDING": 0.030885452404618263,
+    "LAYING": 0.03156859800219536
+   }
+  }
+ }
+}

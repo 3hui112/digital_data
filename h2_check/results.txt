@@ -1,0 +1,26 @@
+== Check A (seeds [3, 4, 5]) ==
+  mamba reference acc 94.00±1.06  macro-F1 94.40±1.09  dyn-F1 98.25
+  lti   reference acc 95.07±0.89  macro-F1 95.51±0.74  dyn-F1 99.43
+  q_s [dyn_f1  ] = [np.float64(-2.48), np.float64(-3.15), np.float64(3.47)]  -> INCONCLUSIVE
+  q_s [macro_f1] = [np.float64(-1.42), np.float64(-1.52), np.float64(1.15)]  -> (reported only)
+  q_s [acc     ] = [np.float64(-1.22), np.float64(-1.33), np.float64(0.41)]  -> (reported only)
+  dyn-F1 drop  1-2 Hz mamba: [np.float64(9.57), np.float64(3.25), np.float64(13.63)]
+  dyn-F1 drop  1-2 Hz lti  : [np.float64(12.05), np.float64(6.4), np.float64(10.17)]
+== Check B (seeds [0, 1, 2]) ==
+  mamba reference acc 88.83±1.40  macro-F1 88.41±1.32  dyn-F1 86.13
+  lti   reference acc 88.67±1.86  macro-F1 88.14±1.97  dyn-F1 85.15
+  q_s [dyn_f1  ] = [np.float64(2.7), np.float64(0.75), np.float64(0.88)]  -> INCONCLUSIVE
+  q_s [macro_f1] = [np.float64(1.84), np.float64(0.51), np.float64(0.56)]  -> (reported only)
+  q_s [acc     ] = [np.float64(1.53), np.float64(0.56), np.float64(0.2)]  -> (reported only)
+  dyn-F1 drop  3-5 Hz mamba: [np.float64(12.83), np.float64(16.87), np.float64(18.93)]
+  dyn-F1 drop  3-5 Hz lti  : [np.float64(10.23), np.float64(15.93), np.float64(19.53)]
+  dyn-F1 drop  5-8 Hz mamba: [np.float64(9.24), np.float64(3.87), np.float64(11.74)]
+  dyn-F1 drop  5-8 Hz lti  : [np.float64(6.44), np.float64(3.31), np.float64(9.39)]
+== Check A: all bands, macro-F1 drop mean over seeds 3-5 ==
+    0.3-1 Hz  mamba   3.66  lti   4.76
+      1-2 Hz  mamba   4.75  lti   5.35
+      2-3 Hz  mamba   0.55  lti   0.31
+      3-5 Hz  mamba   0.31  lti  -0.12
+      5-8 Hz  mamba  -0.07  lti   0.07
+     8-12 Hz  mamba   0.01  lti  -0.08
+    12-20 Hz  mamba  -0.02  lti  -0.04

@@ -1,0 +1,17 @@
+# datasets (UCI HAR is downloaded separately)
+data/
+*.zip
+*.npz
+
+# checkpoints and fitted models (not shared in this repository)
+*.pt
+*.joblib
+
+# environments and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# reports are shared separately
+*.pdf

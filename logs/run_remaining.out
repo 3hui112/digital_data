@@ -1,0 +1,21 @@
+skip mamba s0 (done)
+skip mamba s1 (done)
+skip mamba s2 (done)
+skip cnn s0 (done)
+skip cnn s1 (done)
+skip cnn s2 (done)
+skip lstm s0 (done)
+skip lstm s1 (done)
+skip lstm s2 (done)
+skip ema s0 (done)
+skip ema s1 (done)
+skip ema s2 (done)
+launched 3 jobs on GPU 4: 593028 593030 593032
+done. results: /home/ksh020954/mamba_dd/handoff/digital_data/runs/<model>/seed<S>/summary.json
+model                    seeds       val acc (%)    val macro-F1 (%)   params
+Mamba (selective)            3      95.07 ± 0.41        95.48 ± 0.41    20454
+Mamba-LTI                    3      95.71 ± 0.22        96.09 ± 0.21    15910
+CNN                          3      92.48 ± 1.22        92.95 ± 1.22     6822
+LSTM                         3      92.06 ± 1.37        92.49 ± 1.28    14150
+EMA bank + LogReg            3      89.85 ± 0.00        89.54 ± 0.00     None
+-> /home/ksh020954/mamba_dd/handoff/digital_data/phase1_outputs.tgz

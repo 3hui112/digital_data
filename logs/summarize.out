@@ -1,0 +1,6 @@
+model                    seeds       val acc (%)    val macro-F1 (%)   params
+Mamba (selective)            3      95.07 ± 0.41        95.48 ± 0.41    20454
+Mamba-LTI                    3      95.71 ± 0.22        96.09 ± 0.21    15910
+CNN                          3      92.48 ± 1.22        92.95 ± 1.22     6822
+LSTM                         3      92.06 ± 1.37        92.49 ± 1.28    14150
+EMA bank + LogReg            3      89.85 ± 0.00        89.54 ± 0.00     None

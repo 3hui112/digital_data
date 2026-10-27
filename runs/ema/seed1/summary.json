@@ -1,0 +1,120 @@
+{
+  "split": "validation",
+  "runs": [
+    {
+      "seed": 1,
+      "accuracy": 0.898469387755102,
+      "macro_f1": 0.8953881359334047,
+      "confusion_matrix": [
+        [
+          309,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          260,
+          20,
+          0,
+          0,
+          0
+        ],
+        [
+          24,
+          33,
+          204,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          271,
+          81,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          37,
+          337,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          380
+        ]
+      ]
+    }
+  ],
+  "alphas": [
+    0.1,
+    0.5,
+    0.9,
+    0.99
+  ],
+  "config": {
+    "data_root": "/data1/ksh020954/mamba_dd/raw",
+    "download": false,
+    "alphas": [
+      0.1,
+      0.5,
+      0.9,
+      0.99
+    ],
+    "seeds": [
+      1
+    ],
+    "split_seed": 42,
+    "subset_seed": 123,
+    "val_fraction": 0.2,
+    "val_subjects": null,
+    "train_subset": null,
+    "out": "/home/ksh020954/nas/course_work/digital_data/runs/ema/seed1"
+  },
+  "train_subjects": [
+    1,
+    3,
+    5,
+    6,
+    7,
+    8,
+    11,
+    14,
+    15,
+    16,
+    19,
+    22,
+    23,
+    27,
+    28,
+    29
+  ],
+  "val_subjects": [
+    17,
+    21,
+    25,
+    26,
+    30
+  ],
+  "feature_dim": 108,
+  "note": "lbfgs logistic regression is deterministic; seed variance may be exactly zero.",
+  "accuracy": {
+    "mean": 0.898469387755102,
+    "std": null
+  },
+  "macro_f1": {
+    "mean": 0.8953881359334047,
+    "std": null
+  }
+}
