@@ -58,4 +58,6 @@ bash h2_check/run_all.sh <GPU for A> <GPU for B> && python h2_check/evaluate_che
 3. **Check B**: 0.3–3 Hz를 지운 데이터로 재학습한 뒤 3–8 Hz를 추가로 지웠습니다. q<sub>s</sub> = +2.70, +0.75, +0.88로 방향은 가설대로지만 δ 미만이 있어 **판단 불가**입니다.
 4. **대역 간 중복:** 3–5 Hz를 지웠을 때 동적 F1 하락이 원래 모델에서는 ≈ 0이고, 저주파 없이 학습한 모델에서는 13–19%p입니다. 3–8 Hz에도 정보는 있지만, 저주파가 있으면 모델이 쓰지 않습니다.
 
-전체 수치는 `h2_check/results.txt`, `h2_check/results.json`, `h2_check/pilot_e1/e1_quick.json`에 있습니다.
+5. **3–8 Hz 동시 제거 (탐색적, 사전 등록 아님):** `exploratory_joint_3_8.py`로 위 모든 checkpoint에서 3–8 Hz를 한 번에 지웠습니다. 하락이 따로 지운 하락의 합보다 커서(Check B macro-F1 18–28%p) 3–5 Hz와 5–8 Hz 사이에도 중복이 있습니다. q<sub>s</sub>는 파일럿 −5.76, −4.48, +0.77, Check A −3.92, −0.62, +4.43, Check B +15.61, +0.70, +0.49로 모두 판단 불가입니다.
+
+전체 수치는 `h2_check/exploratory_joint_3_8.txt`, `h2_check/results.txt`, `h2_check/results.json`, `h2_check/pilot_e1/e1_quick.json`에 있습니다.
