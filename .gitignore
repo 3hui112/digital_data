@@ -15,3 +15,6 @@ __pycache__/
 
 # reports are shared separately
 *.pdf
+
+# Phase 2 run outputs (checkpoints are ignored above; logs stay local)
+phase2/logs/

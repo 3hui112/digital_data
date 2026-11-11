@@ -14,6 +14,7 @@ Phase 1 공통 실험과 T4 H2 파일럿 실험의 코드와 결과입니다. �
 | `runs/` | Phase 1 학습 결과: mamba, lti, cnn, lstm, ema × seed 0–2 (`summary.json`, `history.json`, `validation.json`, `config.json`, `split.json`) |
 | `results/`, `figs/`, `logs/` | Phase 1 수치(JSON), 그림, 학습·분석 로그 |
 | `h2_check/` | T4 H2 파일럿 실험 (아래 참고) |
+| `final_protocol.md`, `phase2/` | Phase 2 고정 프로토콜과 확인 실험(seed 6–8) 코드. `python phase2/jobs.py` 후 `python phase2/scheduler.py`로 빈 GPU에서 순서대로 학습 |
 
 ## 환경과 데이터
 

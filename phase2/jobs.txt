@@ -1,0 +1,81 @@
+E1_mamba_s6	--model mamba --seed 6 --bands none --out phase2/runs/E1_mamba_s6
+E1_lti_s6	--model mamba --lti --seed 6 --bands none --out phase2/runs/E1_lti_s6
+E1_cnn_s6	--model cnn --seed 6 --bands none --out phase2/runs/E1_cnn_s6
+E1_mamba_s7	--model mamba --seed 7 --bands none --out phase2/runs/E1_mamba_s7
+E1_lti_s7	--model mamba --lti --seed 7 --bands none --out phase2/runs/E1_lti_s7
+E1_cnn_s7	--model cnn --seed 7 --bands none --out phase2/runs/E1_cnn_s7
+E1_mamba_s8	--model mamba --seed 8 --bands none --out phase2/runs/E1_mamba_s8
+E1_lti_s8	--model mamba --lti --seed 8 --bands none --out phase2/runs/E1_lti_s8
+E1_cnn_s8	--model cnn --seed 8 --bands none --out phase2/runs/E1_cnn_s8
+E2_0.3-3_mamba_s6	--model mamba --seed 6 --bands 0.3-3 --out phase2/runs/E2_0.3-3_mamba_s6
+E2_0.3-3_lti_s6	--model mamba --lti --seed 6 --bands 0.3-3 --out phase2/runs/E2_0.3-3_lti_s6
+E2_0.3-3_cnn_s6	--model cnn --seed 6 --bands 0.3-3 --out phase2/runs/E2_0.3-3_cnn_s6
+E2_0.3-3_mamba_s7	--model mamba --seed 7 --bands 0.3-3 --out phase2/runs/E2_0.3-3_mamba_s7
+E2_0.3-3_lti_s7	--model mamba --lti --seed 7 --bands 0.3-3 --out phase2/runs/E2_0.3-3_lti_s7
+E2_0.3-3_cnn_s7	--model cnn --seed 7 --bands 0.3-3 --out phase2/runs/E2_0.3-3_cnn_s7
+E2_0.3-3_mamba_s8	--model mamba --seed 8 --bands 0.3-3 --out phase2/runs/E2_0.3-3_mamba_s8
+E2_0.3-3_lti_s8	--model mamba --lti --seed 8 --bands 0.3-3 --out phase2/runs/E2_0.3-3_lti_s8
+E2_0.3-3_cnn_s8	--model cnn --seed 8 --bands 0.3-3 --out phase2/runs/E2_0.3-3_cnn_s8
+E2_0.3-1_mamba_s6	--model mamba --seed 6 --bands 0.3-1 --out phase2/runs/E2_0.3-1_mamba_s6
+E2_0.3-1_lti_s6	--model mamba --lti --seed 6 --bands 0.3-1 --out phase2/runs/E2_0.3-1_lti_s6
+E2_0.3-1_cnn_s6	--model cnn --seed 6 --bands 0.3-1 --out phase2/runs/E2_0.3-1_cnn_s6
+E2_0.3-1_mamba_s7	--model mamba --seed 7 --bands 0.3-1 --out phase2/runs/E2_0.3-1_mamba_s7
+E2_0.3-1_lti_s7	--model mamba --lti --seed 7 --bands 0.3-1 --out phase2/runs/E2_0.3-1_lti_s7
+E2_0.3-1_cnn_s7	--model cnn --seed 7 --bands 0.3-1 --out phase2/runs/E2_0.3-1_cnn_s7
+E2_0.3-1_mamba_s8	--model mamba --seed 8 --bands 0.3-1 --out phase2/runs/E2_0.3-1_mamba_s8
+E2_0.3-1_lti_s8	--model mamba --lti --seed 8 --bands 0.3-1 --out phase2/runs/E2_0.3-1_lti_s8
+E2_0.3-1_cnn_s8	--model cnn --seed 8 --bands 0.3-1 --out phase2/runs/E2_0.3-1_cnn_s8
+E2_1-2_mamba_s6	--model mamba --seed 6 --bands 1-2 --out phase2/runs/E2_1-2_mamba_s6
+E2_1-2_lti_s6	--model mamba --lti --seed 6 --bands 1-2 --out phase2/runs/E2_1-2_lti_s6
+E2_1-2_cnn_s6	--model cnn --seed 6 --bands 1-2 --out phase2/runs/E2_1-2_cnn_s6
+E2_1-2_mamba_s7	--model mamba --seed 7 --bands 1-2 --out phase2/runs/E2_1-2_mamba_s7
+E2_1-2_lti_s7	--model mamba --lti --seed 7 --bands 1-2 --out phase2/runs/E2_1-2_lti_s7
+E2_1-2_cnn_s7	--model cnn --seed 7 --bands 1-2 --out phase2/runs/E2_1-2_cnn_s7
+E2_1-2_mamba_s8	--model mamba --seed 8 --bands 1-2 --out phase2/runs/E2_1-2_mamba_s8
+E2_1-2_lti_s8	--model mamba --lti --seed 8 --bands 1-2 --out phase2/runs/E2_1-2_lti_s8
+E2_1-2_cnn_s8	--model cnn --seed 8 --bands 1-2 --out phase2/runs/E2_1-2_cnn_s8
+E2_2-3_mamba_s6	--model mamba --seed 6 --bands 2-3 --out phase2/runs/E2_2-3_mamba_s6
+E2_2-3_lti_s6	--model mamba --lti --seed 6 --bands 2-3 --out phase2/runs/E2_2-3_lti_s6
+E2_2-3_cnn_s6	--model cnn --seed 6 --bands 2-3 --out phase2/runs/E2_2-3_cnn_s6
+E2_2-3_mamba_s7	--model mamba --seed 7 --bands 2-3 --out phase2/runs/E2_2-3_mamba_s7
+E2_2-3_lti_s7	--model mamba --lti --seed 7 --bands 2-3 --out phase2/runs/E2_2-3_lti_s7
+E2_2-3_cnn_s7	--model cnn --seed 7 --bands 2-3 --out phase2/runs/E2_2-3_cnn_s7
+E2_2-3_mamba_s8	--model mamba --seed 8 --bands 2-3 --out phase2/runs/E2_2-3_mamba_s8
+E2_2-3_lti_s8	--model mamba --lti --seed 8 --bands 2-3 --out phase2/runs/E2_2-3_lti_s8
+E2_2-3_cnn_s8	--model cnn --seed 8 --bands 2-3 --out phase2/runs/E2_2-3_cnn_s8
+E2_3-7_mamba_s6	--model mamba --seed 6 --bands 3-7 --out phase2/runs/E2_3-7_mamba_s6
+E2_3-7_lti_s6	--model mamba --lti --seed 6 --bands 3-7 --out phase2/runs/E2_3-7_lti_s6
+E2_3-7_cnn_s6	--model cnn --seed 6 --bands 3-7 --out phase2/runs/E2_3-7_cnn_s6
+E2_3-7_mamba_s7	--model mamba --seed 7 --bands 3-7 --out phase2/runs/E2_3-7_mamba_s7
+E2_3-7_lti_s7	--model mamba --lti --seed 7 --bands 3-7 --out phase2/runs/E2_3-7_lti_s7
+E2_3-7_cnn_s7	--model cnn --seed 7 --bands 3-7 --out phase2/runs/E2_3-7_cnn_s7
+E2_3-7_mamba_s8	--model mamba --seed 8 --bands 3-7 --out phase2/runs/E2_3-7_mamba_s8
+E2_3-7_lti_s8	--model mamba --lti --seed 8 --bands 3-7 --out phase2/runs/E2_3-7_lti_s8
+E2_3-7_cnn_s8	--model cnn --seed 8 --bands 3-7 --out phase2/runs/E2_3-7_cnn_s8
+E2_7-11_mamba_s6	--model mamba --seed 6 --bands 7-11 --out phase2/runs/E2_7-11_mamba_s6
+E2_7-11_lti_s6	--model mamba --lti --seed 6 --bands 7-11 --out phase2/runs/E2_7-11_lti_s6
+E2_7-11_cnn_s6	--model cnn --seed 6 --bands 7-11 --out phase2/runs/E2_7-11_cnn_s6
+E2_7-11_mamba_s7	--model mamba --seed 7 --bands 7-11 --out phase2/runs/E2_7-11_mamba_s7
+E2_7-11_lti_s7	--model mamba --lti --seed 7 --bands 7-11 --out phase2/runs/E2_7-11_lti_s7
+E2_7-11_cnn_s7	--model cnn --seed 7 --bands 7-11 --out phase2/runs/E2_7-11_cnn_s7
+E2_7-11_mamba_s8	--model mamba --seed 8 --bands 7-11 --out phase2/runs/E2_7-11_mamba_s8
+E2_7-11_lti_s8	--model mamba --lti --seed 8 --bands 7-11 --out phase2/runs/E2_7-11_lti_s8
+E2_7-11_cnn_s8	--model cnn --seed 8 --bands 7-11 --out phase2/runs/E2_7-11_cnn_s8
+E2_11-15_mamba_s6	--model mamba --seed 6 --bands 11-15 --out phase2/runs/E2_11-15_mamba_s6
+E2_11-15_lti_s6	--model mamba --lti --seed 6 --bands 11-15 --out phase2/runs/E2_11-15_lti_s6
+E2_11-15_cnn_s6	--model cnn --seed 6 --bands 11-15 --out phase2/runs/E2_11-15_cnn_s6
+E2_11-15_mamba_s7	--model mamba --seed 7 --bands 11-15 --out phase2/runs/E2_11-15_mamba_s7
+E2_11-15_lti_s7	--model mamba --lti --seed 7 --bands 11-15 --out phase2/runs/E2_11-15_lti_s7
+E2_11-15_cnn_s7	--model cnn --seed 7 --bands 11-15 --out phase2/runs/E2_11-15_cnn_s7
+E2_11-15_mamba_s8	--model mamba --seed 8 --bands 11-15 --out phase2/runs/E2_11-15_mamba_s8
+E2_11-15_lti_s8	--model mamba --lti --seed 8 --bands 11-15 --out phase2/runs/E2_11-15_lti_s8
+E2_11-15_cnn_s8	--model cnn --seed 8 --bands 11-15 --out phase2/runs/E2_11-15_cnn_s8
+E2_15-19_mamba_s6	--model mamba --seed 6 --bands 15-19 --out phase2/runs/E2_15-19_mamba_s6
+E2_15-19_lti_s6	--model mamba --lti --seed 6 --bands 15-19 --out phase2/runs/E2_15-19_lti_s6
+E2_15-19_cnn_s6	--model cnn --seed 6 --bands 15-19 --out phase2/runs/E2_15-19_cnn_s6
+E2_15-19_mamba_s7	--model mamba --seed 7 --bands 15-19 --out phase2/runs/E2_15-19_mamba_s7
+E2_15-19_lti_s7	--model mamba --lti --seed 7 --bands 15-19 --out phase2/runs/E2_15-19_lti_s7
+E2_15-19_cnn_s7	--model cnn --seed 7 --bands 15-19 --out phase2/runs/E2_15-19_cnn_s7
+E2_15-19_mamba_s8	--model mamba --seed 8 --bands 15-19 --out phase2/runs/E2_15-19_mamba_s8
+E2_15-19_lti_s8	--model mamba --lti --seed 8 --bands 15-19 --out phase2/runs/E2_15-19_lti_s8
+E2_15-19_cnn_s8	--model cnn --seed 8 --bands 15-19 --out phase2/runs/E2_15-19_cnn_s8
