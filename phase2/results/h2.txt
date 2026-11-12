@@ -1,0 +1,6 @@
+H2 (E2 low-off checkpoints, validation, seeds 6-8); values in pp
+ 3-7 macro_f1 c sel 25.12 / 27.01 / 20.29 | lti 15.26 / 17.09 / 11.23 | cnn 20.37 / 23.54 / 18.17 | q  9.87 /  9.93 /  9.05 -> SUPPORTED  (PRIMARY)
+ 3-7 dyn_f1   c sel 43.85 / 47.74 / 37.64 | lti 29.40 / 31.13 / 20.02 | cnn 36.44 / 41.36 / 31.78 | q 14.44 / 16.62 / 17.62 -> SUPPORTED
+ 3-8 macro_f1 c sel 32.54 / 31.80 / 22.94 | lti 18.57 / 22.03 / 12.44 | cnn 24.12 / 29.63 / 22.61 | q 13.97 /  9.77 / 10.50 -> SUPPORTED
+ 3-8 dyn_f1   c sel 56.39 / 55.19 / 41.61 | lti 35.31 / 39.72 / 21.97 | cnn 42.43 / 51.32 / 39.06 | q 21.07 / 15.47 / 19.64 -> SUPPORTED
+low-off reference macro-F1: mamba 91.14/89.75/90.41  lti 86.98/88.35/86.58  cnn 87.65/87.20/87.20

@@ -1,0 +1,65 @@
+{
+  "split": "validation (filtered as in config)",
+  "runs": [
+    {
+      "seed": 8,
+      "parameters": 20454,
+      "epoch": 19,
+      "accuracy": 0.9056122448979592,
+      "macro_f1": 0.9041407019518188,
+      "confusion_matrix": [
+        [
+          301,
+          8,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          7,
+          248,
+          21,
+          0,
+          4,
+          0
+        ],
+        [
+          23,
+          10,
+          224,
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          332,
+          22,
+          0
+        ],
+        [
+          0,
+          3,
+          1,
+          80,
+          290,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          380
+        ]
+      ],
+      "valid_length_min": 128,
+      "valid_length_max": 128,
+      "valid_length_mean": 128.0
+    }
+  ]
+}
