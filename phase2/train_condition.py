@@ -38,6 +38,8 @@ def main():
     p.add_argument("--seed", type=int, required=True)
     p.add_argument("--bands", required=True)
     p.add_argument("--out", required=True)
+    p.add_argument("--dt_min", type=float, default=None, help="E4 only; default keeps the starter value")
+    p.add_argument("--dt_max", type=float, default=None, help="E4 only; default keeps the starter value")
     p.add_argument("--data_root", default=os.environ.get("DATA", str(REPO / "data")))
     a = p.parse_args()
     if a.lti and a.model != "mamba":
@@ -45,6 +47,7 @@ def main():
 
     argv = ["--dataset", "har", "--data_root", a.data_root, "--model", a.model, "--seeds", str(a.seed),
             "--threads", "1", "--out", a.out] + (["--lti"] if a.lti else [])
+    argv += [f for k in ("dt_min", "dt_max") if getattr(a, k) is not None for f in (f"--{k}", str(getattr(a, k)))]
     cfg = vars(starter_parser().parse_args(argv))
     torch.set_num_threads(cfg["threads"])
     out = Path(a.out)

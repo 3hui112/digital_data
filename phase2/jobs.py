@@ -16,5 +16,9 @@ def job(exp, bands, name, flag, seed):
 lines = [job("E1", "none", n, f, s) for s in SEEDS for n, f in MODELS]
 lines += [job("E2", "0.3-3", n, f, s) for s in SEEDS for n, f in MODELS]
 lines += [job("E2", b, n, f, s) for b in E2_BANDS for s in SEEDS for n, f in MODELS]
+# E4 (optional): selective only, E1 repeated with other dt init ranges (default is [1e-3, 1e-1])
+E4_DT = [("1e-4", "1e-2"), ("1e-2", "1")]
+lines += [f"E4_dt{lo}-{hi}_mamba_s{s}\t--model mamba --seed {s} --bands none --dt_min {lo} --dt_max {hi} "
+          f"--out phase2/runs/E4_dt{lo}-{hi}_mamba_s{s}" for lo, hi in E4_DT for s in SEEDS]
 (HERE / "jobs.txt").write_text("\n".join(lines) + "\n")
 print(len(lines), "jobs")

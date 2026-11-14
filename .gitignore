@@ -3,8 +3,9 @@ data/
 *.zip
 *.npz
 
-# checkpoints and fitted models (not shared in this repository)
+# checkpoints and fitted models (only Phase 2 checkpoints are shared, ~0.1 MB each)
 *.pt
+!phase2/runs/**/best.pt
 *.joblib
 
 # environments and caches

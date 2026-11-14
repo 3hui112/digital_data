@@ -79,3 +79,9 @@ E2_15-19_cnn_s7	--model cnn --seed 7 --bands 15-19 --out phase2/runs/E2_15-19_cn
 E2_15-19_mamba_s8	--model mamba --seed 8 --bands 15-19 --out phase2/runs/E2_15-19_mamba_s8
 E2_15-19_lti_s8	--model mamba --lti --seed 8 --bands 15-19 --out phase2/runs/E2_15-19_lti_s8
 E2_15-19_cnn_s8	--model cnn --seed 8 --bands 15-19 --out phase2/runs/E2_15-19_cnn_s8
+E4_dt1e-4-1e-2_mamba_s6	--model mamba --seed 6 --bands none --dt_min 1e-4 --dt_max 1e-2 --out phase2/runs/E4_dt1e-4-1e-2_mamba_s6
+E4_dt1e-4-1e-2_mamba_s7	--model mamba --seed 7 --bands none --dt_min 1e-4 --dt_max 1e-2 --out phase2/runs/E4_dt1e-4-1e-2_mamba_s7
+E4_dt1e-4-1e-2_mamba_s8	--model mamba --seed 8 --bands none --dt_min 1e-4 --dt_max 1e-2 --out phase2/runs/E4_dt1e-4-1e-2_mamba_s8
+E4_dt1e-2-1_mamba_s6	--model mamba --seed 6 --bands none --dt_min 1e-2 --dt_max 1 --out phase2/runs/E4_dt1e-2-1_mamba_s6
+E4_dt1e-2-1_mamba_s7	--model mamba --seed 7 --bands none --dt_min 1e-2 --dt_max 1 --out phase2/runs/E4_dt1e-2-1_mamba_s7
+E4_dt1e-2-1_mamba_s8	--model mamba --seed 8 --bands none --dt_min 1e-2 --dt_max 1 --out phase2/runs/E4_dt1e-2-1_mamba_s8
